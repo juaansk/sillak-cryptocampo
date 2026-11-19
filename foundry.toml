@@ -1,0 +1,14 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+# Endpoints RPC: las variables se leen del entorno (ver .env.example).
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+
+# Verificación en Etherscan (Sepolia).
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}", chain = "sepolia" }
